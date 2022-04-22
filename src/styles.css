@@ -3,7 +3,10 @@
   text-align: center;
 }
 
-.appSection {
-  display: flex;
-  flex-direction: column;
+.wrapper {
+  padding: 5px 20px;
+}
+
+.wrapper fieldset {
+  margin: 20px 0;
 }
