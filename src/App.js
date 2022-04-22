@@ -3,8 +3,8 @@ import uniqid from "uniqid";
 import Overview from "./components/Overview";
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       info: {
@@ -47,32 +47,32 @@ class App extends Component {
       <div>
         <form onSubmit={this.onSubmitForm}>
           <h1>CV Generator</h1>
-          <section>
+          <section className="appSection">
             <h3>General Information</h3>
             {/* User Name */}
             <label htmlFor="UserName">Name</label>
             <input
               type="text"
               id="UserName"
-              value={info.text}
+              value={info.text.name}
               onChange={this.handleChange}
-            ></input>
+            />
             {/* Email */}
             <label htmlFor="UserEmail">Email</label>
             <input
               type="text"
               id="UserEmail"
-              value={info.text}
+              value={info.text.email}
               onChange={this.handleChange}
-            ></input>
+            />
             {/* Phone number */}
             <label htmlFor="UserPhone">Phone Number</label>
             <input
               type="text"
               id="UserPhone"
-              value={info.text}
+              value={info.text.phone}
               onChange={this.handleChange}
-            ></input>
+            />
             {/* buttons */}
             <button>EDIT</button>
             <button type="submit">SUBMIT</button>
@@ -84,25 +84,25 @@ class App extends Component {
             <input
               type="text"
               id="schoolName"
-              value={info.text}
+              value={info.text.schoolName}
               onChange={this.handleChange}
-            ></input>
+            />
             {/* Title of Study */}
             <label htmlFor="studyTitle">Title of Study</label>
             <input
               type="text"
               id="studyTitle"
-              value={info.text}
+              value={info.text.studyTitle}
               onChange={this.handleChange}
-            ></input>
+            />
             {/* Date of study */}
             <label htmlFor="studyDate">Date of Study</label>
             <input
               type="text"
               id="studyDate"
-              value={info.text}
+              value={info.text.studyDate}
               onChange={this.handleChange}
-            ></input>
+            />
             {/* buttons */}
             <button>EDIT</button>
             <button type="submit">SUBMIT</button>
@@ -114,41 +114,41 @@ class App extends Component {
             <input
               type="text"
               id="companyName"
-              value={info.text}
+              value={info.text.companyName}
               onChange={this.handleChange}
-            ></input>
+            />
             {/* Position title */}
             <label htmlFor="positionTitle">Position Title</label>
             <input
               type="text"
               id="positionTitle"
-              value={info.text}
+              value={info.text.positionTitle}
               onChange={this.handleChange}
-            ></input>
+            />
             {/* Main tasks of your jobs */}
             <label htmlFor="tasksName">Tasks Name</label>
             <input
               type="text"
               id="tasksName"
-              value={info.text}
+              value={info.text.tasksName}
               onChange={this.handleChange}
-            ></input>
+            />
             {/* Company- date from */}
             <label htmlFor="companyWorkFrom">Company Work From</label>
             <input
               type="date"
               id="companyWorkFrom"
-              value={info.text}
+              value={info.text.companyWorkFrom}
               onChange={this.handleChange}
-            ></input>
+            />
             {/* Company- date till */}
             <label htmlFor="companyWorTill">Company Work Till</label>
             <input
               type="date"
               id="companyWorkTill"
-              value={info.text}
+              value={info.text.companyWorkTill}
               onChange={this.handleChange}
-            ></input>
+            />
             {/* buttons */}
             <button>EDIT</button>
             <button type="submit">SUBMIT</button>
