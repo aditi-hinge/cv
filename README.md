@@ -1,2 +1,0 @@
-# cv
-Created with CodeSandbox
